@@ -181,6 +181,38 @@ Given the high-stakes nature of medical decision-making, fairness and transparen
 
 Interpretability tools such as **SHAP** and **LIME** were applied across all models. For tabular transformers, a strong alignment was observed between intrinsic attention mechanisms and SHAP-based feature attributions, reinforcing their suitability for explainable healthcare AI.
 
+
+
+---
+
+## Results 
+
+### ROC Curves Comparison
+The ROC curves below compare the classification performance of the top-performing models across varying decision thresholds.
+
+![ROC Curves](Images(Results)/ROCCurves.png)
+
+---
+
+### Performance Summary of Top Models
+The following table summarises the evaluation metrics for the best-performing models.
+
+![Top Model Results](Images(Results)/ResultsFromTopPerformingModels.png)
+
+---
+
+### XGBoost SHAP Explainability
+SHAP values were used to interpret the predictions of the XGBoost model, highlighting the most influential clinical features.
+
+![XGBoost SHAP](Images(Results)/XGBoostShapExplainer.png)
+
+---
+
+### TabNet Feature Importance
+TabNet’s intrinsic attention mechanism provides feature importance scores, reinforcing clinically relevant risk factors.
+
+![TabNet Feature Importance](Images(Results)/TabNetFeatureImportance.png)
+
 ---
 
 ## 13. Conclusion
